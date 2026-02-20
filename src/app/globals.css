@@ -5,6 +5,14 @@
 	--font-mono: var(--font-geist-mono);
 }
 
+@theme {
+	--color-primary: #b1614e;
+	--color-secondary: #5e5150;
+	--color-accent1: #c9becc;
+	--color-accent2: #fef7ea;
+	--color-addis: #402b22;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }

@@ -7,10 +7,10 @@ export default function NavBar() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
-		<nav className="fixed left-0 right-0 top-0 z-50 px-6 py-4 shadow-sm bg-orange-50">
+		<nav className="fixed left-0 right-0 top-0 z-50 px-6 py-4 shadow-sm bg-accent2">
 			<div className="max-w-7xl mx-auto flex items-center justify-between">
 				<div className="flex items-center gap-2">
-					<h1 className={"text-2xl font-bold tracking-wide text-orange-800 " + title.className}>Imam Hampers</h1>
+					<h1 className={"text-2xl font-bold tracking-wide text-primary " + title.className}>Imam Hampers</h1>
 				</div>
 
 				{/* Desktop Menu */}
@@ -32,7 +32,7 @@ export default function NavBar() {
 				{/* Icons */}
 				<div className="hidden md:flex items-center gap-4">
 					<div className="relative">
-						<input type="text" placeholder="Cari hadiah..." className="pl-8 pr-4 py-1.5 rounded-full text-sm border focus:outline-none focus:ring-1 border-orange-800 bg-transparent" />
+						<input type="text" placeholder="Cari hadiah..." className="pl-8 pr-4 py-1.5 rounded-full text-sm border focus:outline-none focus:ring-1 border-primary bg-transparent" />
 						<Search className="w-4 h-4 absolute left-2.5 top-1/2 -translate-y-1/2 opacity-50" />
 					</div>
 				</div>
