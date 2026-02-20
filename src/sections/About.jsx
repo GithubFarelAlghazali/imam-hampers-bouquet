@@ -1,40 +1,44 @@
 import { title, subTitle, text } from "@/helpers/fonts";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
 	return (
-		<section id="about" className="py-20 px-6 relative overflow-hidden">
-			<div className="absolute -left-20 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl opacity-40 pointer-events-none bg-accent-1"></div>
+		<section id="custom" className="flex pb-20 px-6 relative md:flex-row flex-col gap-3 md:gap-2">
+			<div className="flex justify-end mx-auto flex-row  rounded-xl bg-primary text-accent2 shadow-lg md:w-[48%] md:h-64 w-full transition-transform hover:-translate-y-1 duration-300 relative">
+				<Image src="/products/custom-buket.webp" width={400} height={400} alt="Foto Buket Bunga" className="md:size-80 size-48 absolute -left-10 md:-left-32 md:-top-10 -rotate-12" />
+				<article className="flex w-2/3 flex-col justify-between p-5 md:p-6">
+					<div>
+						<h2 className={"text-2xl font-bold leading-tight md:text-3xl " + title.className}>Custom Bouquet</h2>
 
-			<div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-				<div className="w-full md:w-1/2 relative">
-					<div className="relative z-10 rounded-tr-[4rem] rounded-bl-[4rem] overflow-hidden shadow-2xl">
-						<img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&q=80&w=1000" alt="Tentang Kami" className="w-full h-125 object-cover" />
+						<p className="mt-2 text-sm opacity-90 line-clamp-2">Kreasikan buket sesuai kebutuhan</p>
 					</div>
-					<div className="absolute -bottom-6 -right-6 w-full h-full border-2 rounded-tr-[4rem] rounded-bl-[4rem] z-0 border-y-primary"></div>
-				</div>
+					<div className="mt-4 flex items-center justify-between md:mt-0">
+						<div className="flex flex-col">
+							<span className="text-xs opacity-80">Harga Mulai</span>
+							<span className="text-xl font-bold md:text-2xl">Rp 30.000</span>
+						</div>
+						<button className="rounded-lg border-2 border-accent2 px-4 py-2 text-sm font-semibold transition hover:bg-accent2 hover:text-addis">Pesan</button>
+					</div>
+				</article>
+			</div>
 
-				<div className="w-full md:w-1/2">
-					<h3 className={"text-4xl mb-6 leading-tight text-shadow-primary" + title.className}>
-						Tentang <br /> Imam Hampers & Bouquet
-					</h3>
-					<p className="mb-6 leading-relaxed text-lg text-secondary">
-						Kami adalah usaha jasa kreatif yang tidak hanya menjual produk, tetapi membantu Anda merancang momen spesial. Fokus kami adalah memberikan sentuhan personal pada setiap hadiah.
-					</p>
+			<div className="flex w-full md:justify-start justify-end mx-auto flex-row  rounded-xl bg-addis text-accent2 shadow-lg md:w-[48%] md:h-64 transition-transform hover:-translate-y-1 duration-300 relative ">
+				<Image src="/products/custom-hampers.webp" width={400} height={400} alt="Foto Buket Bunga" className="absolute top-0 -left-10 size-44 -rotate-6 md:-right-16 md:left-auto md:size-64 md:rotate-12" />
+				<article className="flex w-2/3 flex-col justify-between p-5 md:p-6">
+					<div>
+						<h2 className={"text-2xl font-bold leading-tight md:text-3xl " + title.className}>Custom Hampers</h2>
 
-					<ul className="space-y-4 mb-8">
-						{["Bisa request sesuai budget & keinginan", "Tema custom (Wisuda, Ultah, Anniversary)", "Pilihan bunga fresh & artificial", "Siap kirim ke area kampus & kantor"].map((item, idx) => (
-							<li key={idx} className="flex items-center gap-3">
-								<div className="w-2 h-2 rounded-full bg-primary"></div>
-								<span className="font-medium">{item}</span>
-							</li>
-						))}
-					</ul>
-
-					<button className="px-8 py-3 rounded text-white shadow-lg flex items-center gap-2 bg-secondary">
-						Baca Selengkapnya <ArrowRight className="w-4 h-4" />
-					</button>
-				</div>
+						<p className="mt-2 text-sm opacity-90 line-clamp-2">Kreasikan hampers sesuai kebutuhan</p>
+					</div>
+					<div className="mt-4 flex items-center  justify-between md:mt-0">
+						<div className="flex flex-col">
+							<span className="text-xs opacity-80">Harga Mulai</span>
+							<span className="text-xl font-bold md:text-2xl">Rp 40.000</span>
+						</div>
+						<button className="rounded-lg border-2 border-accent2 px-4 py-2 text-sm font-semibold transition hover:bg-accent2 hover:text-addis">Pesan</button>
+					</div>
+				</article>
 			</div>
 		</section>
 	);

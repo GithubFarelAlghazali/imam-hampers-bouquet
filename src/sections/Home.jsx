@@ -52,10 +52,8 @@ export default function HomeSection() {
 				</motion.div>
 
 				<motion.div variants={itemVariant} className="order-1 md:order-2 relative">
-					<div className="absolute inset-0  rounded-full blur-3xl opacity-30 transform translate-x-10 translate-y-10"></div>
 					<div className="relative z-10 rounded-[3rem] ">
-						<Image width={1000} height={1000} src="/bouquet-ilustration.webp" alt="Wanita memegang hadiah" className="w-full h-100 md:h-125 object-cover hover:scale-105 transition-transform duration-700" />
-
+						<Image width={1000} height={1000} src="/bouquet-ilustration.webp" alt="Buket Snack" className="w-full h-100 md:h-125 object-cover hover:scale-105 transition-transform duration-700" />
 						<motion.div variants={itemVariant} className="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg max-w-xs">
 							<p className="font-bold text-sm mb-1 text-primary">Best Seller!</p>
 							<p className="text-xs text-gray-600">Graduation Bouquet Custom</p>

@@ -6,6 +6,7 @@ import BubbleChat from "@/components/BubbleChat";
 import HomeSection from "@/sections/Home";
 import CatalogSection from "@/sections/Catalog";
 import AboutSection from "@/sections/About";
+import { text } from "@/helpers/fonts";
 
 export default function Home() {
 	const generateWaLink = (productName = "") => {
@@ -16,11 +17,13 @@ export default function Home() {
 	};
 
 	return (
-		<div className="min-h-screen relative overflow-x-hidden bg-accent2 text-addis ">
+		<div className={"min-h-screen relative overflow-x-hidden bg-accent2 text-addis " + text.className}>
 			<NavBar />
-			<HomeSection />
-			<CatalogSection />
-			<AboutSection />
+			<div className="md:px-30 pt-10 md:pt-3">
+				<HomeSection />
+				<CatalogSection />
+				<AboutSection />
+			</div>
 			<Footer />
 			<BubbleChat />
 		</div>
