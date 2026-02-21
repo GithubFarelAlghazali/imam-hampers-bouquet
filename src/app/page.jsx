@@ -9,13 +9,6 @@ import ServicesSection from "@/sections/Services";
 import { text } from "@/helpers/fonts";
 
 export default function Home() {
-	const generateWaLink = (productName = "") => {
-		const phone = "628123456789"; // Ganti dengan nomor asli
-		let text = "Halo Imam Hampers, saya ingin bertanya";
-		if (productName) text += ` tentang produk *${productName}*`;
-		return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
-	};
-
 	return (
 		<div className={"min-h-screen relative overflow-x-hidden bg-accent2 text-addis " + text.className}>
 			<NavBar />

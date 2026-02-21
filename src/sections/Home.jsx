@@ -2,6 +2,7 @@ import { title, subTitle } from "@/helpers/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import * as motion from "motion/react-client";
+import generateWaLink from "@/helpers/generateChat";
 
 const containerVariant = {
 	hidden: {
@@ -44,7 +45,9 @@ export default function HomeSection() {
 					</h2>
 					<p className="text-lg opacity-80 max-w-md leading-relaxed">Buat momen wisuda, ulang tahun, dan anniversary jadi lebih berkesan dengan hampers & bouquet custom dari kami.</p>
 					<motion.div variants={itemVariant} className="flex gap-4 pt-4">
-						<button className={"px-8 py-3 rounded text-white font-medium shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-primary  " + subTitle.className}>Pesan Sekarang</button>
+						<button onClick={() => generateWaLink()} className={"px-8 py-3 rounded text-white font-medium shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-primary  " + subTitle.className}>
+							Pesan Sekarang
+						</button>
 						<Link href="#katalog" className={"px-8 py-3 rounded border font-medium hover:bg-white/50 transition-colors border-primary text-primary " + subTitle.className}>
 							Lihat Katalog
 						</Link>
