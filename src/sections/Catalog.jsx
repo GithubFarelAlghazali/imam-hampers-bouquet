@@ -30,10 +30,6 @@ export default function CatalogSection() {
 						<div key={product.id} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
 							<div className="relative h-48 md:h-64 overflow-hidden bg-gray-100">
 								<Image width={400} height={400} loading="lazy" src={`/products/${product.img}`} alt={product.product} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-								<button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow hover:text-red-500 transition-colors">
-									<Heart className="w-4 h-4" />
-								</button>
-
 								<div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"></div>
 							</div>
 
