@@ -1,6 +1,7 @@
 import { title } from "@/helpers/fonts";
 import Image from "next/image";
 import * as motion from "motion/react-client";
+import generateWaLink from "@/helpers/generateChat";
 
 const fadeIn = {
 	hidden: {
@@ -42,7 +43,9 @@ export default function ServicesSection() {
 							<span className="text-xs opacity-80">Harga Mulai</span>
 							<span className="text-xl font-bold md:text-2xl">Rp 30.000</span>
 						</div>
-						<button className="rounded-lg border-2 border-accent2 px-4 py-2 text-sm font-semibold transition hover:bg-accent2 hover:text-addis">Pesan</button>
+						<button onClick={() => generateWaLink("Buket Custom")} className="rounded-lg border-2 border-accent2 px-4 py-2 text-sm font-semibold transition hover:bg-accent2 hover:text-addis">
+							Pesan
+						</button>
 					</div>
 				</article>
 			</motion.div>
@@ -67,7 +70,9 @@ export default function ServicesSection() {
 							<span className="text-xs opacity-80">Harga Mulai</span>
 							<span className="text-xl font-bold md:text-2xl">Rp 40.000</span>
 						</div>
-						<button className="rounded-lg border-2 border-accent2 px-4 py-2 text-sm font-semibold transition hover:bg-accent2 hover:text-addis">Pesan</button>
+						<button onClick={() => generateWaLink("Hampers Custom")} className="rounded-lg border-2 border-accent2 px-4 py-2 text-sm font-semibold transition hover:bg-accent2 hover:text-addis">
+							Pesan
+						</button>
 					</div>
 				</article>
 			</motion.div>

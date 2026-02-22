@@ -1,6 +1,6 @@
 "use client";
-import { title, subTitle, text } from "@/helpers/fonts";
-import { Search, Menu } from "lucide-react";
+import { title, subTitle } from "@/helpers/fonts";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -14,44 +14,34 @@ export default function NavBar() {
 				</div>
 
 				<div className={"hidden md:flex items-center gap-8 font-medium " + subTitle.className}>
-					<a href="#home" className="hover:text-primary transition-colors">
+					<a href="/#home" className="hover:text-primary transition-colors">
 						Beranda
 					</a>
-					<a href="#katalog" className="hover:text-primary transition-colors">
+					<a href="/#katalog" className="hover:text-primary transition-colors">
 						Katalog
 					</a>
-					<a href="#about" className="hover:text-primary transition-colors">
-						Tentang Kami
+					<a href="/#custom" className="hover:text-primary transition-colors">
+						Custom
 					</a>
-					<a href="#contact" className="hover:text-primary transition-colors">
+					<a href="/#contact" className="hover:text-primary transition-colors">
 						Kontak
 					</a>
 				</div>
 
-				{/* Icons */}
-				<div className="hidden md:flex items-center gap-4">
-					<div className="relative">
-						<input type="text" placeholder="Cari hadiah..." className="pl-8 pr-4 py-1.5 rounded-full text-sm border focus:outline-none focus:ring-1 border-primary bg-transparent" />
-						<Search className="w-4 h-4 absolute left-2.5 top-1/2 -translate-y-1/2 opacity-50" />
-					</div>
-				</div>
-
-				{/* Mobile Menu Button */}
 				<button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
 					{mobileMenuOpen ? <X /> : <Menu />}
 				</button>
 			</div>
 
-			{/* Mobile Menu Dropdown */}
 			{mobileMenuOpen && (
-				<div className="md:hidden absolute top-full left-0 w-full bg-[#fff7ed] border-b shadow-lg p-4 flex flex-col gap-4">
-					<a href="#" className="block py-2">
+				<div className="md:hidden absolute top-full left-0 w-full bg-[/#fff7ed] border-b shadow-lg p-4 flex flex-col gap-4">
+					<a href="/#" className="block py-2">
 						Beranda
 					</a>
-					<a href="#katalog" className="block py-2">
+					<a href="/#katalog" className="block py-2">
 						Katalog
 					</a>
-					<a href="#about" className="block py-2">
+					<a href="/#about" className="block py-2">
 						Tentang Kami
 					</a>
 					<input type="text" placeholder="Cari..." className="w-full p-2 border rounded" />

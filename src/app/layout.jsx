@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="id">
+		<html lang="id" className="scroll-smooth scroll-pt-20">
 			<body className={`${text.className} antialiased bg-accent2 text-addis`}>
 				<NavBar />
 				{children}
