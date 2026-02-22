@@ -1,4 +1,7 @@
 import "./globals.css";
+import NavBar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { text } from "@/helpers/fonts";
 
 export const metadata = {
 	title: "Imam Hampers & Bouquet - Hadiah Terbaik untuk setiap Momen Berharga",
@@ -7,8 +10,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
-			<body className={` antialiased`}>{children}</body>
+		<html lang="id">
+			<body className={`${text.className} antialiased bg-accent2 text-addis`}>
+				<NavBar />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }

@@ -21,7 +21,7 @@ const fadeIn = {
 
 export default function ServicesSection() {
 	return (
-		<section id="custom" className="flex pb-20 px-6 relative md:flex-row flex-col gap-3 md:gap-2">
+		<section id="custom" className="flex pb-20 px-6 relative md:flex-row flex-col gap-10 md:gap-2">
 			<motion.div
 				variants={fadeIn}
 				initial="hidden"
