@@ -76,12 +76,7 @@ export default function CatalogSection() {
 									<h4 className={"font-bold text-lg mb-2 truncate " + subTitle.className}>{product.product}</h4>
 									<p className="text-xl font-bold mb-4 text-shadow-primary">Rp {product.price.toLocaleString("id-ID")}</p>
 
-									<Link
-										href={`/product/${product.id}`}
-										target="_blank"
-										rel="noreferrer"
-										className="w-full  py-2 rounded-lg text-sm font-semibold border transition-colors flex items-center justify-center gap-2 border-primary text-primary"
-									>
+									<Link href={`/product/${product.id}`} rel="noreferrer" className="w-full  py-2 rounded-lg text-sm font-semibold border transition-colors flex items-center justify-center gap-2 border-primary text-primary">
 										<Info className="w-4 h-4" />
 										Lihat Detail
 									</Link>
