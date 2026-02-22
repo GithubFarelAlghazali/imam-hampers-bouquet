@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { text } from "@/helpers/fonts";
 
 export const metadata = {
-	title: "Imam Hampers & Bouquet - Hadiah Terbaik untuk setiap Momen Berharga",
+	title: "Imam Hampers & Bouquet - Jual Buket & Hampers",
 	description: "Jasa pembuatan Buket & Hampers untuk hadiah, kado, atau wisuda.",
 };
 
